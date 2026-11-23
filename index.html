@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Práctica Integradora · GAB-2402 Programación Avanzada</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header>
+    <div class="header-container">
+      <div class="logo">GAB-2402 <span>Práctica Integradora</span></div>
+      <nav>
+        <ul>
+          <li><a href="index.html" class="active">Inicio</a></li>
+          <li><a href="entregable-1.html">Entregable 1</a></li>
+          <li><a href="entregable-2.html">Entregable 2</a></li>
+          <li><a href="entregable-3.html">Entregable 3</a></li>
+          <li><a href="entregable-4.html">Entregable 4</a></li>
+          <li><a href="rubrica.html">Rúbrica</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="badge">Ingeniería Informática · Gestión y Analítica Avanzada de Datos</div>
+      <h1>Práctica Integradora de la Asignatura</h1>
+      <p>
+        Proyecto único que articula los cinco temas de <strong>Programación Avanzada (GAB-2402)</strong>:
+        manipulación de datos, visualización, modelado predictivo, bases de datos y aplicación web de analítica.
+      </p>
+    </section>
+
+    <section class="section">
+      <h2>Objetivo general</h2>
+      <p>
+        Desarrollar un <strong>sistema de analítica de datos de extremo a extremo</strong> sobre un
+        caso de negocio realista: desde la preparación de datos y su almacenamiento, hasta
+        la exploración visual, el modelado predictivo y la entrega de resultados en una
+        aplicación interactiva, con documentación y presentación final.
+      </p>
+    </section>
+
+    <section class="section">
+      <h2>Caso de negocio</h2>
+      <p>
+        Una organización con presencia en varias ciudades desea entender el comportamiento
+        de su fuerza laboral y de indicadores asociados (salario, departamento, experiencia,
+        satisfacción, etc.), detectar patrones, estimar variables de interés y disponer de
+        un tablero para consulta por personal directivo o de RR.HH.
+      </p>
+      <p>
+        Trabajarás con el dataset <code>data/empleados_analitica.csv</code> (incluido en este
+        repositorio). El archivo contiene deliberadamente problemas de calidad de datos
+        (valores faltantes, duplicados, valores atípicos) para que apliques el ciclo completo
+        de preparación.
+      </p>
+    </section>
+
+    <section class="section">
+      <h2>Temas de la asignatura que se integran</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Tema</th>
+            <th>Contenido que se aplica en la práctica</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>1.</strong> Fundamentos de programación avanzada y manipulación de datos</td>
+            <td>Python avanzado, NumPy, Pandas, limpieza, transformación y preparación</td>
+          </tr>
+          <tr>
+            <td><strong>2.</strong> Visualización avanzada de datos</td>
+            <td>Matplotlib, Seaborn, Plotly; gráficos estáticos e interactivos</td>
+          </tr>
+          <tr>
+            <td><strong>3.</strong> Análisis estadístico y modelado predictivo</td>
+            <td>Estadística descriptiva e inferencial, ML supervisado, evaluación de modelos</td>
+          </tr>
+          <tr>
+            <td><strong>4.</strong> Gestión de bases de datos avanzada</td>
+            <td>Diseño de esquema, SQLite/SQL, consultas y persistencia de datos limpios</td>
+          </tr>
+          <tr>
+            <td><strong>5.</strong> Aplicaciones de analítica y proyecto práctico</td>
+            <td>Aplicación Streamlit (o equivalente), integración de visualizaciones y entrega final</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <h2 style="margin-bottom: 1.25rem; color: var(--primary);">Cuatro entregables</h2>
+    <div class="cards">
+      <article class="card">
+        <h3>Entregable 1</h3>
+        <p><strong>Datos listos y persistidos</strong> — limpieza, diccionario de datos, esquema y carga en base de datos.</p>
+        <a href="entregable-1.html">Ver detalle →</a>
+      </article>
+      <article class="card">
+        <h3>Entregable 2</h3>
+        <p><strong>Exploración y evidencia</strong> — visualizaciones y análisis estadístico que respondan preguntas de negocio.</p>
+        <a href="entregable-2.html">Ver detalle →</a>
+      </article>
+      <article class="card">
+        <h3>Entregable 3</h3>
+        <p><strong>Modelo predictivo validado</strong> — entrenamiento, métricas, validación y modelo serializado.</p>
+        <a href="entregable-3.html">Ver detalle →</a>
+      </article>
+      <article class="card" style="border: 2px solid #10b981;">
+        <h3>Entregable 4</h3>
+        <p><strong>Aplicación y cierre</strong> — app de analítica, README del proyecto y presentación de resultados.</p>
+        <a href="entregable-4.html">Ver detalle →</a>
+      </article>
+    </div>
+
+    <section class="section">
+      <h2>Forma de trabajo</h2>
+      <ul>
+        <li>Puede realizarse de forma individual o en equipos pequeños (según indicación del docente).</li>
+        <li>Cada entregable se sube al repositorio del equipo (GitHub) en carpetas o ramas claras.</li>
+        <li>El código debe ser reproducible: mismos resultados al ejecutar el notebook o scripts en orden.</li>
+        <li>Se valora la claridad del código, la documentación y la interpretación de resultados (no solo “que corra”).</li>
+      </ul>
+      <div class="callout tip">
+        <strong>Repositorio sugerido</strong>
+        <pre style="margin-top: 0.75rem;"><code>practica-integradora-gab2402/
+├── data/
+├── notebooks/
+├── sql/
+├── models/
+├── app/
+├── docs/
+└── README.md</code></pre>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>Competencia de la asignatura que se evalúa</h2>
+      <p>
+        <em>Desarrolla y aplica soluciones avanzadas de programación en Python para la gestión y análisis de datos.</em>
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    <p>
+      <strong>GAB-2402 · Programación Avanzada</strong><br>
+      Tecnológico de Estudios Superiores de Chalco · Ingeniería Informática
+    </p>
+    <p style="margin-top: 0.75rem; font-size: 0.95rem;">
+      Práctica diseñada por el <strong>Prof. Fabián Soberanes Martín</strong>
+    </p>
+  </footer>
+</body>
+</html>

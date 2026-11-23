@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Entregable 1 · Datos listos y persistidos | GAB-2402</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header>
+    <div class="header-container">
+      <div class="logo">GAB-2402 <span>Práctica Integradora</span></div>
+      <nav>
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="entregable-1.html" class="active">Entregable 1</a></li>
+          <li><a href="entregable-2.html">Entregable 2</a></li>
+          <li><a href="entregable-3.html">Entregable 3</a></li>
+          <li><a href="entregable-4.html">Entregable 4</a></li>
+          <li><a href="rubrica.html">Rúbrica</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <div class="breadcrumb"><a href="index.html">Inicio</a> › Entregable 1</div>
+    <section class="section">
+      <h2>Entregable 1 — Datos listos y persistidos</h2>
+      <p>
+        <strong>Temas que cubre:</strong> Tema 1 (programación avanzada y manipulación de datos)
+        y Tema 4 (diseño de esquema, carga y consultas básicas en base de datos).
+      </p>
+
+      <h3>Propósito</h3>
+      <p>
+        Dejar el dataset en condición analítica reproducible y almacenarlo en una base
+        de datos relacional simple (SQLite es suficiente), con documentación del
+        significado de cada variable y de las decisiones de limpieza.
+      </p>
+
+      <h3>Qué debe incluir este entregable</h3>
+      <ol>
+        <li>
+          <strong>Exploración inicial del CSV</strong>
+          <ul>
+            <li>Dimensiones, tipos de datos, muestra de registros.</li>
+            <li>Conteo de nulos, duplicados y valores fuera de rango evidentes.</li>
+          </ul>
+        </li>
+        <li>
+          <strong>Pipeline de limpieza y transformación (Python + Pandas/NumPy)</strong>
+          <ul>
+            <li>Eliminación o tratamiento de duplicados.</li>
+            <li>Imputación justificada de valores faltantes.</li>
+            <li>Tratamiento de valores atípicos (documentar el criterio: IQR, topes, etc.).</li>
+            <li>Normalización de tipos (fechas, categorías, numéricos).</li>
+            <li>Creación de al menos dos variables derivadas útiles para el análisis
+                (por ejemplo rangos de edad, indicadores binarios, ratios).</li>
+          </ul>
+        </li>
+        <li>
+          <strong>Diccionario de datos</strong>
+          <ul>
+            <li>Nombre de variable, tipo, descripción, valores posibles o rango, y notas de calidad.</li>
+          </ul>
+        </li>
+        <li>
+          <strong>Diseño y creación de esquema en SQLite</strong>
+          <ul>
+            <li>Al menos una tabla principal de hechos/empleados limpia.</li>
+            <li>Clave primaria e índices razonables (por ejemplo departamento, ciudad).</li>
+            <li>Opcional: tablas de catálogo (departamentos, ciudades) si normalizas el modelo.</li>
+          </ul>
+        </li>
+        <li>
+          <strong>Carga de datos limpios y verificación</strong>
+          <ul>
+            <li>Inserción desde el DataFrame limpio.</li>
+            <li>Consultas de comprobación (<code>COUNT</code>, agregados por departamento/ciudad).</li>
+          </ul>
+        </li>
+      </ol>
+
+      <h3>Productos a entregar</h3>
+      <ul>
+        <li>Notebook o scripts de limpieza (<code>notebooks/01_limpieza_y_bd.ipynb</code> o equivalente).</li>
+        <li>Archivo SQL del esquema (<code>sql/schema.sql</code>) si aplica.</li>
+        <li>Base SQLite generada o instrucciones inequívocas para regenerarla.</li>
+        <li>Diccionario de datos (Markdown, CSV o sección del notebook).</li>
+        <li>Breve bitácora de decisiones de limpieza (qué se hizo y por qué).</li>
+      </ul>
+
+      <div class="callout info">
+        <strong>Criterio de “listo”</strong>
+        Quien clone el repo y ejecute el notebook en orden debe obtener la misma base
+        limpia y poder consultar agregados básicos sin errores de integridad evidentes.
+      </div>
+
+      <div class="btn-group">
+        <a href="index.html" class="btn">← Inicio</a>
+        <a href="entregable-2.html" class="btn btn-accent">Siguiente: Entregable 2 →</a>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <p>GAB-2402 · Prof. Fabián Soberanes Martín</p>
+  </footer>
+</body>
+</html>

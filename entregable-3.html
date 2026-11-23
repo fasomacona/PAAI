@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Entregable 3 · Modelo predictivo validado | GAB-2402</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header>
+    <div class="header-container">
+      <div class="logo">GAB-2402 <span>Práctica Integradora</span></div>
+      <nav>
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="entregable-1.html">Entregable 1</a></li>
+          <li><a href="entregable-2.html">Entregable 2</a></li>
+          <li><a href="entregable-3.html" class="active">Entregable 3</a></li>
+          <li><a href="entregable-4.html">Entregable 4</a></li>
+          <li><a href="rubrica.html">Rúbrica</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <div class="breadcrumb"><a href="index.html">Inicio</a> › Entregable 3</div>
+    <section class="section">
+      <h2>Entregable 3 — Modelo predictivo validado</h2>
+      <p>
+        <strong>Temas que cubre:</strong> Tema 3.2 y 3.3 (modelado predictivo,
+        algoritmos de aprendizaje automático, evaluación y validación).
+      </p>
+
+      <h3>Propósito</h3>
+      <p>
+        Construir al menos un modelo supervisado útil para el caso de negocio,
+        compararlo con una línea base, evaluarlo con métricas adecuadas y dejarlo
+        listo para usarse en la aplicación del Entregable 4.
+      </p>
+
+      <h3>Qué debe incluir este entregable</h3>
+      <ol>
+        <li>
+          <strong>Definición del problema de ML</strong>
+          <ul>
+            <li>Tipo: regresión y/o clasificación (puedes hacer uno principal y otro opcional).</li>
+            <li>Variable objetivo y features candidatas (justificar con el EDA del Entregable 2).</li>
+            <li>Criterio de éxito (métrica principal y umbral orientativo).</li>
+          </ul>
+        </li>
+        <li>
+          <strong>Preparación para modelado</strong>
+          <ul>
+            <li>Separación train/test (y estratificación si es clasificación).</li>
+            <li>Codificación de categóricas y escalado cuando corresponda.</li>
+            <li>Evitar fuga de información (fit solo en train).</li>
+          </ul>
+        </li>
+        <li>
+          <strong>Modelos</strong>
+          <ul>
+            <li>Línea base simple (media, regresión lineal, modelo nulo, etc.).</li>
+            <li>Al menos un modelo adicional (por ejemplo Random Forest u otro algoritmo visto en clase).</li>
+            <li>Comparación clara de resultados.</li>
+          </ul>
+        </li>
+        <li>
+          <strong>Evaluación y validación</strong>
+          <ul>
+            <li>Métricas apropiadas (MAE/RMSE/R² o accuracy/precision/recall/F1/ROC-AUC).</li>
+            <li>Validación cruzada en train (reporte de media ± desviación).</li>
+            <li>Diagnóstico breve: ¿sobreajuste? ¿qué variables importan?</li>
+          </ul>
+        </li>
+        <li>
+          <strong>Serialización</strong>
+          <ul>
+            <li>Guardar el mejor modelo (y scaler/encoder si aplica) en <code>models/</code>.</li>
+            <li>Script o celda que demuestre cargar el modelo y predecir un ejemplo.</li>
+          </ul>
+        </li>
+      </ol>
+
+      <h3>Productos a entregar</h3>
+      <ul>
+        <li>Notebook <code>notebooks/03_modelado.ipynb</code>.</li>
+        <li>Artefactos en <code>models/</code> (por ejemplo <code>.joblib</code>).</li>
+        <li>Tabla comparativa de modelos y conclusión sobre el modelo elegido.</li>
+      </ul>
+
+      <div class="callout tip">
+        <strong>Consejo</strong>
+        Un modelo simple bien evaluado y bien explicado vale más que un modelo
+        complejo sin diagnóstico ni reproducibilidad.
+      </div>
+
+      <div class="btn-group">
+        <a href="entregable-2.html" class="btn">← Entregable 2</a>
+        <a href="entregable-4.html" class="btn btn-accent">Siguiente: Entregable 4 →</a>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <p>GAB-2402 · Prof. Fabián Soberanes Martín</p>
+  </footer>
+</body>
+</html>

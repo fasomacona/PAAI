@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Entregable 2 · Exploración y evidencia | GAB-2402</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header>
+    <div class="header-container">
+      <div class="logo">GAB-2402 <span>Práctica Integradora</span></div>
+      <nav>
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="entregable-1.html">Entregable 1</a></li>
+          <li><a href="entregable-2.html" class="active">Entregable 2</a></li>
+          <li><a href="entregable-3.html">Entregable 3</a></li>
+          <li><a href="entregable-4.html">Entregable 4</a></li>
+          <li><a href="rubrica.html">Rúbrica</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <div class="breadcrumb"><a href="index.html">Inicio</a> › Entregable 2</div>
+    <section class="section">
+      <h2>Entregable 2 — Exploración visual y evidencia estadística</h2>
+      <p>
+        <strong>Temas que cubre:</strong> Tema 2 (visualización avanzada) y
+        Tema 3.1 (análisis estadístico avanzado de datos).
+      </p>
+
+      <h3>Propósito</h3>
+      <p>
+        Responder preguntas de negocio con gráficos claros y con pruebas o
+        resúmenes estadísticos que respalden las afirmaciones (no solo “se ve en la gráfica”).
+      </p>
+
+      <h3>Preguntas mínimas a responder</h3>
+      <ul>
+        <li>¿Cómo se distribuye la variable objetivo principal (por ejemplo salario)?</li>
+        <li>¿Hay diferencias relevantes entre departamentos y/o ciudades?</li>
+        <li>¿Qué relaciones destacan entre variables numéricas?</li>
+        <li>¿Existen patrones por segmentos (educación, satisfacción, experiencia)?</li>
+      </ul>
+
+      <h3>Qué debe incluir este entregable</h3>
+      <ol>
+        <li>
+          <strong>Visualizaciones estáticas</strong>
+          <ul>
+            <li>Al menos un histograma o densidad de la variable clave.</li>
+            <li>Al menos un boxplot o violin por categoría relevante.</li>
+            <li>Matriz de correlación (heatmap) de variables numéricas.</li>
+            <li>Un gráfico adicional de comparación (barras, puntos, etc.).</li>
+          </ul>
+        </li>
+        <li>
+          <strong>Visualización interactiva</strong>
+          <ul>
+            <li>Al menos un gráfico con Plotly (o equivalente) que permita explorar
+                una relación (por ejemplo dispersión con color por departamento).</li>
+          </ul>
+        </li>
+        <li>
+          <strong>Análisis estadístico</strong>
+          <ul>
+            <li>Medidas descriptivas por grupo (media, mediana, desviación, conteos).</li>
+            <li>Al menos una prueba de hipótesis pertinente al caso
+                (por ejemplo comparación de medias entre dos departamentos).</li>
+            <li>Interpretación en lenguaje de negocio: qué implica el resultado y qué no implica.</li>
+          </ul>
+        </li>
+        <li>
+          <strong>Hallazgos documentados</strong>
+          <ul>
+            <li>Lista de 4–6 hallazgos concretos, cada uno ligado a una figura o prueba.</li>
+          </ul>
+        </li>
+      </ol>
+
+      <h3>Productos a entregar</h3>
+      <ul>
+        <li>Notebook <code>notebooks/02_eda_visual_estadistica.ipynb</code> (o sección equivalente).</li>
+        <li>Figuras exportadas o embebidas de forma legible.</li>
+        <li>Sección de hallazgos (Markdown en el notebook o <code>docs/hallazgos.md</code>).</li>
+      </ul>
+
+      <div class="callout warning">
+        <strong>Importante</strong>
+        Usa preferentemente los datos ya limpios del Entregable 1 (desde CSV limpio o SQLite).
+        No reinicies el proyecto con el CSV crudo sin documentar por qué.
+      </div>
+
+      <div class="btn-group">
+        <a href="entregable-1.html" class="btn">← Entregable 1</a>
+        <a href="entregable-3.html" class="btn btn-accent">Siguiente: Entregable 3 →</a>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <p>GAB-2402 · Prof. Fabián Soberanes Martín</p>
+  </footer>
+</body>
+</html>
